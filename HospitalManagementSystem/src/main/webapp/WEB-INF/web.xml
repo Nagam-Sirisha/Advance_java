@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>HospitalManagementSystem</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.xhtml</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.xhtml</welcome-file>
+  </welcome-file-list>
+  
+  <servlet>
+  	<servlet-name>Login</servlet-name>
+  	<servlet-class>org.jsp.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Login</servlet-name>
+   <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>Homepage</servlet-name>
+  	<servlet-class>org.jsp.Homepage</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Homepage</servlet-name>
+  <url-pattern>/Homepage</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>Signup</servlet-name>
+  	<servlet-class>org.jsp.Signup</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Signup</servlet-name>
+   <url-pattern>/Signup</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>PatientDetails</servlet-name>
+  	<servlet-class>org.jsp.PatientForm</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>PatientDetails</servlet-name>
+   <url-pattern>/PatientForm</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>RemovePatient</servlet-name>
+  	<servlet-class>org.jsp.RemovePatient</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RemovePatient</servlet-name>
+   <url-pattern>/RemovePatient</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>DisplayPatient</servlet-name>
+  	<servlet-class>org.jsp.DisplayAll</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>DisplayPatient</servlet-name>
+   <url-pattern>/DisplayAll</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>

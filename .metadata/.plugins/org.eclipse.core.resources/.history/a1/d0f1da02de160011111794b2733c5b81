@@ -1,0 +1,7 @@
+package org.jsp.controller;
+
+public class MobileController {
+	public static void main(String[] args) {
+		
+	}
+}

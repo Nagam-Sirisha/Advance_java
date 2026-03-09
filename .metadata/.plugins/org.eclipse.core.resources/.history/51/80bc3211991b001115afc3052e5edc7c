@@ -1,0 +1,12 @@
+package org.jsp.dto;
+
+import javax.persistence.Id;
+
+public class Aadhar 
+{
+	@Id
+	int aadhar_id;
+	String date_of_birth;
+	String gender;
+	
+}

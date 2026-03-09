@@ -1,0 +1,9 @@
+package org.jsp;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/profile")
+public class Profile 
+{
+
+}

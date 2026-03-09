@@ -1,0 +1,33 @@
+package org.jsp.dao;
+
+import javax.persistence.EntityManager;
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
+import javax.persistence.Persistence;
+
+import org.jsp.dto.Aadhar;
+import org.jsp.dto.Person;
+
+public class PersonAadharDao
+{
+	EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("OneToOneBi");
+	EntityManager entityManager = entityManagerFactory.createEntityManager();
+	EntityTransaction entityTransaction = entityManager.getTransaction();
+	
+	public void savePerson(Person person)
+	{
+		entityTransaction.begin();
+		entityManager.persist(person);
+		entityTransaction.commit();
+		System.out.println("saved");
+	}
+	
+	public void savePerson(Aadhar aadhar)
+	{
+		entityTransaction.begin();
+		entityManager.persist(aadhar);
+		entityTransaction.commit();
+		System.out.println("saved");
+	}
+	
+}

@@ -1,0 +1,9 @@
+package org.jsp.controller;
+
+public class LaptopController 
+{
+	public static void main(String[] args) 
+	{
+		
+	}
+}

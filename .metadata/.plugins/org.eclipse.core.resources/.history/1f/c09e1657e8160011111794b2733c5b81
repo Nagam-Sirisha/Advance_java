@@ -1,0 +1,9 @@
+package org.jsp.dto;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Laptop
+{
+	
+}

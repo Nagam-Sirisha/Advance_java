@@ -1,0 +1,16 @@
+package org.jsp.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
+public class Laptop
+{
+	@Id
+	private int id;
+	private String brandName;
+	private int size;
+	private double cost;
+	private int ram;
+	private int rom;
+}

@@ -1,0 +1,21 @@
+package org.jsp.controller;
+
+import org.jsp.dao.LaptopDao;
+import org.jsp.dto.Laptop;
+
+public class LaptopController 
+{
+	public static void main(String[] args) 
+	{
+		LaptopDao dao = new LaptopDao();
+		Laptop laptop = new Laptop();
+		
+		laptop.setId(101);
+		laptop.setBrandName("Hp");
+		laptop.setRam(8);
+		laptop.setRom(256);
+		laptop.setCost(89000);
+		
+		dao.saveLaptop(laptop);
+	}
+}

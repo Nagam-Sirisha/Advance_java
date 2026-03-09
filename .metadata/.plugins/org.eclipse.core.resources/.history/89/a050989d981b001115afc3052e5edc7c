@@ -1,0 +1,14 @@
+package org.jsp.dto;
+
+import javax.persistence.Id;
+
+public class Person
+{
+	String name;
+	@Id
+	int id;
+	String address;
+	String email;
+	String password;
+	
+}

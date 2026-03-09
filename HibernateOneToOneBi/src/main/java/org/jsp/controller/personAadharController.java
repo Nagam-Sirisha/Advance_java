@@ -1,0 +1,44 @@
+package org.jsp.controller;
+
+import org.jsp.dao.PersonAadharDao;
+import org.jsp.dto.Aadhar;
+import org.jsp.dto.Person;
+
+public class personAadharController 
+{
+	public static void main(String[] args) 
+	{
+		Person person = new Person();
+		person.setId(104);
+		person.setName("hanuman");
+		person.setAddress("World");
+		person.setEmail("hanuman@gmail.com");
+		person.setPassword("hanuman123");
+		
+		Aadhar aadhar = new Aadhar();
+		aadhar.setAadhar_id(876517401275L);
+		aadhar.setDate_of_birth("immortal");
+		aadhar.setGender("Male");
+		
+		PersonAadharDao aadharDao = new PersonAadharDao();
+//		case-1 : person has aadhar card and aadhar card has person
+		/*person.setAadhar(aadhar);
+		aadhar.setPerson(person);
+		aadharDao.savePerson(person);*/
+		
+//		case-2 : Aadhar has person and person has aadhar
+		/*aadhar.setPerson(person);
+		person.setAadhar(aadhar);
+		aadharDao.saveAadhar(aadhar);*/
+
+//		case-3 : Person had aadharCard and aadhar doesnot have person
+		/*person.setAadhar(aadhar);
+		aadharDao.savePerson(person);*/
+		
+//		case-4 : Aadhar has person and person doesnot have aadhar
+		aadhar.setPerson(person);
+		aadharDao.saveAadhar(aadhar);
+		
+		
+	}
+}

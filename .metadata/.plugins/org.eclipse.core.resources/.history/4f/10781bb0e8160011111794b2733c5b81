@@ -1,0 +1,9 @@
+package org.jsp.dao;
+
+import javax.persistence.EntityManagerFactory;
+import javax.persistence.Persistence;
+
+public class LaptopDao 
+{
+	private EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hibernateCRUD3")
+}
