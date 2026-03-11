@@ -1,7 +1,0 @@
-INDEX VERSION 1.134
-D:\Jspiders\Advance_java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2879810867.index
-\Calculator_JSP\src\main\java
-D:\Jspiders\Advance_java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2951672854.index
-\JSP_program\src\main\java
-D:\Jspiders\Advance_java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2613497962.index
-\Calculator_JSP\src\main\java
